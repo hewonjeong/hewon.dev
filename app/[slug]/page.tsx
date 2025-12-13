@@ -34,7 +34,9 @@ export default async function PostPage({
           source={content}
           components={{
             a: Link as any,
-            img: (props) => <StaticImage {...props} slug={slug} />,
+            img: ((props: React.ComponentProps<'img'>) => (
+              <StaticImage {...props} slug={slug} />
+            )) as any,
             ...postComponents,
           }}
           options={{
@@ -111,8 +113,7 @@ function isRemote(src: string) {
 
 type StaticImageProps = {
   slug: string
-  src?: string
-} & Omit<React.ComponentProps<'img'>, 'width' | 'height' | 'ref' | 'src'>
+} & Omit<React.ComponentProps<'img'>, 'width' | 'height' | 'ref'>
 
 async function StaticImage({ slug, src, ...props }: StaticImageProps) {
   if (!src || typeof src !== 'string') throw new Error('src is required')
