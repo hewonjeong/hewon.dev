@@ -5,7 +5,7 @@ spoiler: 'React Hook에 대해 이해하려면 JavaScript 클로저에 대해 �
 tags: ['React', 'JavaScript', 'Translation']
 ---
 
-[Deep dive: How do React hooks really work?](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)을 저자, [Swyx](https://twitter.com/swyx)의 허락을 받고 번역한 글입니다. 오타, 오역은 [제보](https://github.com/hewonjeong/hewonjeong.github.io/issues/new)해주시면 수정하도록 하겠습니다.👍🏻
+[Deep dive: How do React hooks really work?](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)을 저자, [Swyx](https://twitter.com/swyx)의 허락을 받고 번역한 글입니다. 오타, 오역은 [제보](https://github.com/hewonjeong/hewon.dev/issues/new)해주시면 수정하도록 하겠습니다.👍🏻
 
 ![클로저 다이어그램](closure-diagram.jpg)
 _클로저는 함수와 그 함수가 선언됐을 때의 렉시컬 환경(Lexical environment)의 조합이다. - [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures)_
