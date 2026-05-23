@@ -13,6 +13,9 @@
 /.next/
 /out/
 
+# redirect build output
+/redirect-build/
+
 # production
 /build
 
