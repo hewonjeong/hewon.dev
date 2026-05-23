@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/0~cegjduhodkp.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"markdown","children":[["$","h1",null,{"className":"text-[40px] font-bold leading-[44px]']","children":"Not found"}],["$","div",null,{"className":"markdown mt-10","children":["$","p",null,{"children":"This page doesn’t exist (yet?)"}]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ik2CPd2NKZV_sns_zXzkO"}
+4:null
