@@ -32,9 +32,7 @@ export default async function Home() {
 
 function PostTitle({ post }: { post: Post }) {
   return (
-    <h2 className="text-2xl font-bold break-keep text-[--lightLink] dark:text-[--darkLink]">
-      {post.title}
-    </h2>
+    <h2 className="text-2xl font-bold break-keep">{post.title}</h2>
   )
 }
 
