@@ -74,7 +74,7 @@
 
 .markdown ol li + li,
 .markdown ul li + li {
-  @apply mt-3;
+  @apply mt-2;
 }
 
 .markdown ol ul,
@@ -82,6 +82,10 @@
 .markdown ul ul,
 .markdown ul ol {
   @apply ps-2;
+}
+
+.markdown li > * + * {
+  @apply mt-3;
 }
 
 .markdown li p + p {
