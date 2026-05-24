@@ -25,10 +25,10 @@ export default async function PostPage({
 
   return (
     <article>
-      <h1 className="text-[2.5rem] leading-tight font-bold break-keep">
+      <h1 className="text-[2rem] leading-tight font-bold break-keep">
         {data.title}
       </h1>
-      <Time value={data.date} className="mt-1" />
+      <Time value={data.date} className="mt-1.5" />
       <div className="markdown mt-10 mb-16">
         <MDXRemote
           source={content}

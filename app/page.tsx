@@ -12,7 +12,7 @@ export default async function Home() {
   const posts = await getPosts()
 
   return (
-    <div className="relative -top-[10px] flex flex-col gap-8">
+    <div className="relative -top-[8px] flex flex-col gap-8">
       {posts.map((post) => (
         <Link
           key={post.slug}
@@ -21,8 +21,8 @@ export default async function Home() {
         >
           <article>
             <h2 className="text-2xl font-bold break-keep">{post.title}</h2>
-            <Time value={post.date} className="mt-[2px]" />
-            <p>{post.spoiler}</p>
+            <Time value={post.date} className="mt-1.5" />
+            <p className='mt-0.5'>{post.spoiler}</p>
           </article>
         </Link>
       ))}
