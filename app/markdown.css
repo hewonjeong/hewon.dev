@@ -45,13 +45,13 @@
 }
 
 .markdown > h2 + * {
-  @apply mt-4;
+  @apply mt-5;
 }
 .markdown > h3 + * {
-  @apply mt-3;
+  @apply mt-4;
 }
 .markdown > h4 + * {
-  @apply mt-3;
+  @apply mt-4;
 }
 
 .markdown h3 + .markdown > p,
@@ -96,7 +96,7 @@
 }
 
 .markdown li p + p {
-  @apply mt-1;
+  @apply mt-2;
 }
 
 .markdown p + ol,
