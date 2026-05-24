@@ -225,3 +225,7 @@ code[data-theme*=' '] span {
 .markdown img {
   @apply rounded-lg max-w-full m-auto;
 }
+
+.markdown img + em {
+  @apply block mt-2 text-center;
+}
