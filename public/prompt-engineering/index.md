@@ -28,7 +28,6 @@ tags: []
 - HTML, JSON 등과 같은 구조화된 출력을 요청하기
 - 조건이 충족되는지 모델에게 확인하도록 요청하기
 - 작업의 성공적인 실행 예를 제공하기 (Few-shot prompting)
-
   ```ts
   const prompt = `
   일관된 스타일로 대답해줘
