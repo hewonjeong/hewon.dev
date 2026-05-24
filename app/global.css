@@ -29,6 +29,13 @@ body {
   overflow-wrap: break-word;
 }
 
+h2,
+h3,
+h4 {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 @media (prefers-reduced-motion) {
   * {
     transition: none !important;
