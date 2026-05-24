@@ -7,7 +7,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: [
-          'var(--font-pretendard)',
           '-apple-system',
           'BlinkMacSystemFont',
           '"Apple SD Gothic Neo"',
