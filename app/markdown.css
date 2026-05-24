@@ -77,10 +77,15 @@
   @apply mt-2;
 }
 
-/* Loose list (CommonMark): blank lines between items wrap each in <p>.
- * Detect that wrapper and widen the gap. */
-.markdown ol li:has(> p) + li,
-.markdown ul li:has(> p) + li {
+/* Widen the gap only between substantial multi-block li pairs.
+ * "Substantial" = has `<p>` + another block (prose + code/image,
+ * multiple paragraphs) or directly contains a nested list.
+ * Both adjacent items must qualify, otherwise stays mt-2 — keeps
+ * mixed lists (short items + one heavy item) dense. Trade-off:
+ * loose-by-blank-line lists of single-paragraph items also stay
+ * tight, which is rare in practice. */
+.markdown ol li:has(> p + *, > ul, > ol) + li:has(> p + *, > ul, > ol),
+.markdown ul li:has(> p + *, > ul, > ol) + li:has(> p + *, > ul, > ol) {
   @apply mt-4;
 }
 
