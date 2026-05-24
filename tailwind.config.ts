@@ -6,7 +6,16 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-pretendard)', ...defaultTheme.fontFamily.sans],
+        sans: [
+          'var(--font-pretendard)',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Apple SD Gothic Neo"',
+          '"Segoe UI"',
+          '"Malgun Gothic"',
+          '"Noto Sans KR"',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       colors: {},
     },
