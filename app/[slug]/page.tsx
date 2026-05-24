@@ -28,8 +28,8 @@ export default async function PostPage({
       <h1 className="text-[2.5rem] leading-tight font-bold break-keep">
         {data.title}
       </h1>
-      <Time value={data.date} className="mt-2" />
-      <div className="markdown mt-10">
+      <Time value={data.date} className="mt-1" />
+      <div className="markdown mt-10 mb-16">
         <MDXRemote
           source={content}
           components={{
@@ -63,7 +63,6 @@ export default async function PostPage({
           }}
         />
       </div>
-      <hr className="mt-16 mb-8 opacity-60 dark:opacity-10" />
     </article>
   )
 }

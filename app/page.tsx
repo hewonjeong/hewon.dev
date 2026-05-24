@@ -20,22 +20,12 @@ export default async function Home() {
           href={`/${post.slug}/`}
         >
           <article>
-            <PostTitle post={post} />
+            <h2 className="text-2xl font-bold break-keep">{post.title}</h2>
             <Time value={post.date} className="mt-[2px]" />
-            <PostSubtitle post={post} />
+            <p>{post.spoiler}</p>
           </article>
         </Link>
       ))}
     </div>
   )
-}
-
-function PostTitle({ post }: { post: Post }) {
-  return (
-    <h2 className="text-2xl font-bold break-keep">{post.title}</h2>
-  )
-}
-
-function PostSubtitle({ post }: { post: Post }) {
-  return <p className="mt-[2px]">{post.spoiler}</p>
 }
