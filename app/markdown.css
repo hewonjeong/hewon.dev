@@ -118,7 +118,7 @@ code[data-theme*=' '] span {
   }
 
   :not(pre) > code[data-theme*=' '] {
-    background-color: #101010;
+    background-color: #2d2d2d;
   }
 
   code[data-theme*=' '] span {
