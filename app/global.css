@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light dark;
   --text: #222;
   --bg: white;
 }
@@ -14,13 +15,18 @@
     --text: rgba(255, 255, 255, 0.88);
     --bg: #222;
   }
-}
 
-@media (prefers-color-scheme: dark) {
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern', 'liga', 'calt';
+  line-height: 1.75;
+  overflow-wrap: break-word;
 }
 
 @media (prefers-reduced-motion) {

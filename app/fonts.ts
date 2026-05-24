@@ -1,4 +1,5 @@
-import { Montserrat, Noto_Sans } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
+import localFont from 'next/font/local'
 
 export const brand = Montserrat({
   subsets: ['latin'],
@@ -7,9 +8,9 @@ export const brand = Montserrat({
   style: ['normal'],
 })
 
-export const sans = Noto_Sans({
-  subsets: ['latin'],
+export const pretendard = localFont({
+  src: './fonts/PretendardVariable.woff2',
   display: 'swap',
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
+  weight: '45 920',
+  variable: '--font-pretendard',
 })
