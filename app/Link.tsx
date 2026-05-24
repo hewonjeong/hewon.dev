@@ -46,7 +46,8 @@ export default function Link({
         ...style,
         transform: isNavigating ? 'scale(1)' : '',
         opacity: isNavigating ? 0.85 : 1,
-        transition: 'transform 0.2s ease-in-out, opacity 0.2s 0.4s linear',
+        transition:
+          'transform 0.2s ease-in-out, opacity 0.2s 0.4s linear, color 0.2s ease-in-out, border-color 0.2s ease-in-out',
       }}
     >
       {children}
