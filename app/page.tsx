@@ -21,7 +21,7 @@ export default async function Home() {
         >
           <article>
             <PostTitle post={post} />
-            <Time value={post.date} className="mt-1" />
+            <Time value={post.date} className="mt-[2px]" />
             <PostSubtitle post={post} />
           </article>
         </Link>
@@ -37,5 +37,5 @@ function PostTitle({ post }: { post: Post }) {
 }
 
 function PostSubtitle({ post }: { post: Post }) {
-  return <p className="mt-1">{post.spoiler}</p>
+  return <p className="mt-[2px]">{post.spoiler}</p>
 }
