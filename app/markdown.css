@@ -77,6 +77,13 @@
   @apply mt-2;
 }
 
+/* Loose list (CommonMark): blank lines between items wrap each in <p>.
+ * Detect that wrapper and widen the gap. */
+.markdown ol li:has(> p) + li,
+.markdown ul li:has(> p) + li {
+  @apply mt-4;
+}
+
 .markdown ol ul,
 .markdown ol ol,
 .markdown ul ul,
